@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<package-restrictions>
+    <pkg name="com.miui.screenrecorder" ceDataInode="1966083" />
+    <pkg name="com.android.cts.priv.ctsshim" ceDataInode="1966086" />
+    <pkg name="com.baidu.homework" ceDataInode="2492131" stopped="true">
+        <disabled-components>
+            <item name="com.xiaomi.push.service.XMPushService" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.qualcomm.qti.perfdump" ceDataInode="1966089" />
+    <pkg name="com.miui.contentextension" ceDataInode="1966092" />
+    <pkg name="com.android.internal.display.cutout.emulation.corner" ceDataInode="1966096" />
+    <pkg name="com.qualcomm.qti.improvetouch.service" ceDataInode="1966099" />
+    <pkg name="com.android.internal.display.cutout.emulation.double" ceDataInode="1966102" />
+    <pkg name="com.android.providers.telephony" ceDataInode="1966105" />
+    <pkg name="com.miui.powerkeeper" ceDataInode="1966108">
+        <disabled-components>
+            <item name="com.xiaomi.push.service.XMPushService" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.goodix.fingerprint" ceDataInode="1966111" />
+    <pkg name="com.android.providers.calendar" ceDataInode="1966118">
+        <disabled-components>
+            <item name="com.android.providers.calendar.CalendarUpgradeReceiver" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.miui.contentcatcher" ceDataInode="1966121" />
+    <pkg name="com.xiaomi.vipaccount" ceDataInode="1966124" />
+    <pkg name="com.android.providers.media" ceDataInode="1966128" />
+    <pkg name="com.milink.service" ceDataInode="1966131" />
+    <pkg name="com.qti.service.colorservice" ceDataInode="1966134" />
+    <pkg name="com.xiaomi.powerchecker" ceDataInode="1966141" />
+    <pkg name="com.xiaomi.account" ceDataInode="1966144">
+        <disabled-components>
+            <item name="com.xiaomi.push.service.XMPushService" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.android.wallpapercropper" ceDataInode="1966147" />
+    <pkg name="com.bsp.catchlog" ceDataInode="1966150" />
+    <pkg name="com.quicinc.cne.CNEService" ceDataInode="1966153" />
+    <pkg name="com.qualcomm.qti.autoregistration" ceDataInode="1966156" />
+    <pkg name="com.xiaomi.micloud.sdk" ceDataInode="1966159" />
+    <pkg name="com.miui.packageinstaller" ceDataInode="1966166" enabled="1" enabledCaller="shell:1000" />
+    <pkg name="com.qualcomm.qti.smcinvokepkgmgr" ceDataInode="1966169" />
+    <pkg name="com.android.updater" ceDataInode="1966172" />
+    <pkg name="com.android.documentsui" ceDataInode="1966175" />
+    <pkg name="com.android.externalstorage" ceDataInode="1966178" />
+    <pkg name="com.qualcomm.uimremoteclient" ceDataInode="1966181" />
+    <pkg name="com.xiaomi.gamecenter.sdk.service" ceDataInode="1966184">
+        <disabled-components>
+            <item name="com.xiaomi.push.service.XMPushService" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.android.htmlviewer" ceDataInode="1966188" />
+    <pkg name="com.miui.extraphoto" ceDataInode="1966191" />
+    <pkg name="com.miui.securityadd" ceDataInode="1966194" />
+    <pkg name="com.qualcomm.qti.uceShimService" ceDataInode="1966197" />
+    <pkg name="com.android.companiondevicemanager" ceDataInode="1966200" />
+    <pkg name="com.miui.gallery" ceDataInode="1966203">
+        <disabled-components>
+            <item name="com.xiaomi.push.service.XMPushService" />
+            <item name="com.miui.gallery.cloud.MiCloudStatusInfoReceiver" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.android.quicksearchbox" ceDataInode="1966206">
+        <disabled-components>
+            <item name="com.xiaomi.push.service.XMPushService" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.android.mms.service" ceDataInode="1966210" />
+    <pkg name="com.android.providers.downloads" ceDataInode="1966213">
+        <disabled-components>
+            <item name="com.xiaomi.push.service.XMPushService" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.xiaomi.payment" ceDataInode="1966216" />
+    <pkg name="com.miui.securitycenter" ceDataInode="1966219" />
+    <pkg name="com.qualcomm.qti.telephonyservice" ceDataInode="1966222" />
+    <pkg name="com.android.browser" ceDataInode="1966225" enabled="3" enabledCaller="shell:1000">
+        <disabled-components>
+            <item name="com.xiaomi.push.service.XMPushService" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.miui.systemAdSolution" ceDataInode="1966229">
+        <enabled-components>
+            <item name="androidx.work.impl.background.systemjob.SystemJobService" />
+        </enabled-components>
+        <disabled-components>
+            <item name="com.xiaomi.push.service.XMPushService" />
+            <item name="androidx.work.impl.background.systemalarm.SystemAlarmService" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.qualcomm.qti.auth.fidocryptoservice" ceDataInode="1966232" />
+    <pkg name="com.qualcomm.qti.optinoverlay" ceDataInode="1966235" />
+    <pkg name="com.android.soundrecorder" ceDataInode="1966238" />
+    <pkg name="com.baidu.input_mi" ceDataInode="1966241" stopped="true" nl="true" />
+    <pkg name="com.android.defcontainer" ceDataInode="1966247" />
+    <pkg name="com.qti.confuridialer" ceDataInode="1966250" />
+    <pkg name="com.miui.guardprovider" ceDataInode="1966253" />
+    <pkg name="com.google.ar.core" ceDataInode="1966256" />
+    <pkg name="com.android.providers.downloads.ui" ceDataInode="1966259" />
+    <pkg name="com.android.pacprocessor" ceDataInode="1966262" />
+    <pkg name="com.android.simappdialog" ceDataInode="1966265" />
+    <pkg name="com.miui.backup" ceDataInode="1966268" />
+    <pkg name="android.overlay.common" ceDataInode="1966271" />
+    <pkg name="com.miui.micloudsync" ceDataInode="1966274" />
+    <pkg name="com.tencent.mm" ceDataInode="2228298">
+        <enabled-components>
+            <item name="androidx.work.impl.background.systemalarm.RescheduleReceiver" />
+            <item name="androidx.work.impl.background.systemjob.SystemJobService" />
+        </enabled-components>
+        <disabled-components>
+            <item name="com.tencent.mm.plugin.nfc_open.ui.NfcWebViewUI" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.android.internal.display.cutout.emulation.tall" ceDataInode="1966277" />
+    <pkg name="com.miui.daemon" ceDataInode="1966280" />
+    <pkg name="com.xiaomi.ab" ceDataInode="1966283" />
+    <pkg name="com.android.certinstaller" ceDataInode="1966291" />
+    <pkg name="com.android.carrierconfig" ceDataInode="1966298" />
+    <pkg name="com.google.android.marvin.talkback" ceDataInode="1966301" />
+    <pkg name="com.wapi.wapicertmanage" ceDataInode="1966304" />
+    <pkg name="com.qti.qualcomm.datastatusnotification" ceDataInode="1966307" />
+    <pkg name="android" ceDataInode="1966310" />
+    <pkg name="com.android.systemui.notch.overlay" ceDataInode="1966313" />
+    <pkg name="com.android.contacts" ceDataInode="1966316" />
+    <pkg name="com.qualcomm.qti.callfeaturessetting" ceDataInode="1966319" />
+    <pkg name="com.qualcomm.wfd.service" ceDataInode="1966322" />
+    <pkg name="com.miui.hybrid" ceDataInode="1966325">
+        <disabled-components>
+            <item name="com.xiaomi.push.service.XMPushService" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.miui.vsimcore" ceDataInode="1966329" />
+    <pkg name="com.mi.webkit.core" ceDataInode="1966332" />
+    <pkg name="com.miui.securitycore" ceDataInode="1966335" />
+    <pkg name="com.qti.qualcomm.deviceinfo" ceDataInode="1966338" />
+    <pkg name="com.android.mms" ceDataInode="1966341">
+        <disabled-components>
+            <item name="com.xiaomi.push.service.XMPushService" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.android.mtp" ceDataInode="1966344" />
+    <pkg name="com.android.stk" ceDataInode="1966347">
+        <enabled-components>
+            <item name="com.android.stk.StkMain" />
+        </enabled-components>
+    </pkg>
+    <pkg name="com.android.backupconfirm" ceDataInode="1966350" />
+    <pkg name="com.xiaomi.simactivate.service" ceDataInode="1966353" />
+    <pkg name="com.mfashiongallery.emag" ceDataInode="1966356">
+        <disabled-components>
+            <item name="com.xiaomi.push.service.XMPushService" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.goodix.gftest" ceDataInode="1966359" />
+    <pkg name="com.deepseek.chat" ceDataInode="1967361" stopped="true">
+        <disabled-components>
+            <item name="com.bytedance.applog.migrate.MigrateDetectorActivity" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.android.dialer.overlay.common" ceDataInode="1966362" />
+    <pkg name="com.miui.player" ceDataInode="1966365">
+        <disabled-components>
+            <item name="com.xiaomi.push.service.XMPushService" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.android.provision" ceDataInode="1966368">
+        <disabled-components>
+            <item name="com.android.provision.activities.DefaultActivity" />
+        </disabled-components>
+    </pkg>
+    <pkg name="org.codeaurora.ims" ceDataInode="1966371" />
+    <pkg name="com.android.statementservice" ceDataInode="1966374" />
+    <pkg name="com.xiaomi.mifisecurity" ceDataInode="1966377" stopped="true" nl="true" />
+    <pkg name="com.miui.sysopt" ceDataInode="1966381" />
+    <pkg name="com.miui.system" ceDataInode="1966384" />
+    <pkg name="com.android.settings.intelligence" ceDataInode="1966387" />
+    <pkg name="com.android.calendar" ceDataInode="1966390">
+        <disabled-components>
+            <item name="com.xiaomi.push.service.XMPushService" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.android.systemui.theme.dark" ceDataInode="1966393" />
+    <pkg name="com.miui.translation.kingsoft" ceDataInode="1966396" />
+    <pkg name="com.miui.catcherpatch" ceDataInode="1966399" />
+    <pkg name="com.miui.virtualsim" ceDataInode="1966402">
+        <disabled-components>
+            <item name="com.xiaomi.push.service.XMPushService" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.miui.compass" ceDataInode="1966405" stopped="true" nl="true" />
+    <pkg name="com.qualcomm.qti.dynamicddsservice" ceDataInode="1966408" />
+    <pkg name="com.miui.cit" ceDataInode="1966411" />
+    <pkg name="com.miui.rom" ceDataInode="1966414" />
+    <pkg name="com.android.midrive" ceDataInode="1966417" stopped="true" nl="true" />
+    <pkg name="com.qualcomm.qcrilmsgtunnel" ceDataInode="1966420" />
+    <pkg name="com.android.providers.settings" ceDataInode="1966423" />
+    <pkg name="com.miui.vpnsdkmanager" ceDataInode="1966426" />
+    <pkg name="com.android.sharedstoragebackup" ceDataInode="1966429" />
+    <pkg name="com.xiaomi.location.fused" ceDataInode="1966432" />
+    <pkg name="com.android.printspooler" ceDataInode="1966435" />
+    <pkg name="com.miui.personalassistant" ceDataInode="1966438" />
+    <pkg name="com.bsquare.ucdetectservice" ceDataInode="1966442" />
+    <pkg name="com.android.dreams.basic" ceDataInode="1966445" />
+    <pkg name="com.android.incallui" ceDataInode="1966448" />
+    <pkg name="com.fido.xiaomi.uafclient" ceDataInode="1966451" />
+    <pkg name="com.miui.bugreport" ceDataInode="1966462" />
+    <pkg name="com.android.se" ceDataInode="1966465" />
+    <pkg name="com.android.inputdevices" ceDataInode="1966468" />
+    <pkg name="com.qualcomm.qti.biometrics.fingerprint.service" ceDataInode="1966471" />
+    <pkg name="com.fido.asm" ceDataInode="1966474" />
+    <pkg name="com.android.bips" ceDataInode="1966477" />
+    <pkg name="com.qti.dpmserviceapp" ceDataInode="1966480" />
+    <pkg name="com.fingerprints.extension.service" ceDataInode="1966487" />
+    <pkg name="com.android.fileexplorer" ceDataInode="1966490" />
+    <pkg name="com.qti.xdivert" ceDataInode="1966493" />
+    <pkg name="com.xiaomi.mircs" ceDataInode="1966496" />
+    <pkg name="com.miui.translation.youdao" ceDataInode="1966499" />
+    <pkg name="com.miui.cloudbackup" ceDataInode="1966502" />
+    <pkg name="com.xiaomi.minigame" ceDataInode="2098854" enabled="3" enabledCaller="shell:1000" domainVerificationStatus="1" />
+    <pkg name="com.google.android.webview" ceDataInode="1966505" />
+    <pkg name="android.telephony.overlay.cmcc" ceDataInode="1966509" />
+    <pkg name="android.ext.shared" ceDataInode="1966512" />
+    <pkg name="com.android.onetimeinitializer" ceDataInode="1966515" />
+    <pkg name="com.mipay.wallet" ceDataInode="1966518">
+        <disabled-components>
+            <item name="com.mipay.bill.BootCompletedReceiver" />
+            <item name="com.mipay.sms.local.SmsReceiver" />
+            <item name="com.xiaomi.push.service.XMPushService" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.android.server.telecom" ceDataInode="1966521" />
+    <pkg name="com.android.keychain" ceDataInode="1966524" />
+    <pkg name="com.qti.snapdragon.qdcm_ff" ceDataInode="1966527" />
+    <pkg name="com.android.camera" ceDataInode="1966530" />
+    <pkg name="com.android.printservice.recommendation" ceDataInode="1966537" />
+    <pkg name="com.xiaomi.pass" ceDataInode="1966540" stopped="true" nl="true" />
+    <pkg name="com.xiaomi.upnp" ceDataInode="1966547" />
+    <pkg name="com.xiaomi.xmsf" ceDataInode="1966550">
+        <enabled-components>
+            <item name="com.xiaomi.push.service.XMPushService" />
+        </enabled-components>
+    </pkg>
+    <pkg name="com.google.android.packageinstaller" inst="false" />
+    <pkg name="android.ext.services" ceDataInode="1966553" />
+    <pkg name="com.android.phone.overlay.common" ceDataInode="1966556" />
+    <pkg name="com.qualcomm.qti.qtisystemservice" ceDataInode="1966559" />
+    <pkg name="com.android.carrierconfig.overlay.common" ceDataInode="1966562" />
+    <pkg name="com.android.calllogbackup" ceDataInode="1966565" />
+    <pkg name="com.miui.freeform" ceDataInode="1966568" />
+    <pkg name="com.android.systemui.overlay.common" ceDataInode="1966571" />
+    <pkg name="com.android.server.telecom.overlay.common" ceDataInode="1966574" />
+    <pkg name="com.android.carrierdefaultapp" ceDataInode="1966577" domainVerificationStatus="2" app-link-generation="1">
+        <disabled-components>
+            <item name="com.android.carrierdefaultapp.URLHandlerActivity" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.qualcomm.qti.remoteSimlockAuth" ceDataInode="1966580" />
+    <pkg name="com.xiaomi.finddevice" ceDataInode="1966583" />
+    <pkg name="com.android.proxyhandler" ceDataInode="1966586" />
+    <pkg name="com.xiaomi.joyose" ceDataInode="1966589" />
+    <pkg name="com.miui.newhome" ceDataInode="1966595" />
+    <pkg name="com.miui.notes" ceDataInode="1966598" />
+    <pkg name="com.miui.video" ceDataInode="1966602" enabled="3" enabledCaller="shell:1000">
+        <disabled-components>
+            <item name="com.xiaomi.push.service.XMPushService" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.miui.wmsvc" ceDataInode="1966606" />
+    <pkg name="com.immusician.music" ceDataInode="2494685" stopped="true" domainVerificationStatus="2" app-link-generation="3">
+        <disabled-components>
+            <item name="cn.jpush.android.service.DActivity" />
+            <item name="cn.jpush.android.service.DaemonService" />
+            <item name="cn.jpush.android.service.DownloadProvider" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.xiaomi.market" inst="false" stopped="true" nl="true" domainVerificationStatus="1" />
+    <pkg name="com.miui.translationservice" ceDataInode="1966612" />
+    <pkg name="com.miui.cloudservice" ceDataInode="1966615" />
+    <pkg name="com.android.managedprovisioning" ceDataInode="1966618" />
+    <pkg name="com.miui.hybrid.accessory" ceDataInode="1966621" />
+    <pkg name="com.xiaomi.mbnloader" ceDataInode="1966624" />
+    <pkg name="com.fingerprints.sensortesttool" ceDataInode="1966627" />
+    <pkg name="com.tencent.soter.soterserver" ceDataInode="1966630" />
+    <pkg name="com.miui.audiomonitor" ceDataInode="1966633" />
+    <pkg name="com.miui.translation.xmcloud" ceDataInode="1966636" />
+    <pkg name="com.sohu.inputmethod.sogou.xiaomi" ceDataInode="1966639" />
+    <pkg name="com.miui.touchassistant" ceDataInode="1966642">
+        <disabled-components>
+            <item name="com.miui.touchassistant.receiver.BootReceiver" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.xiaomi.providers.appindex" ceDataInode="1966645" />
+    <pkg name="com.android.smspush" ceDataInode="1966648" />
+    <pkg name="com.android.networksettings.overlay.ct" ceDataInode="1966651" />
+    <pkg name="com.miui.calculator" ceDataInode="1966654" stopped="true" />
+    <pkg name="com.android.wallpaper.livepicker" ceDataInode="1966657" />
+    <pkg name="com.miui.cloudservice.sysbase" ceDataInode="1966660" />
+    <pkg name="com.qualcomm.qti.seemp.service" ceDataInode="1966663" />
+    <pkg name="com.miui.miwallpaper" ceDataInode="1966666" />
+    <pkg name="com.miui.securityinputmethod" ceDataInode="1966673" />
+    <pkg name="com.xiaomi.gamecenter" ceDataInode="1966676" stopped="true" enabled="3" enabledCaller="shell:1000" />
+    <pkg name="com.xiaomi.bluetooth" ceDataInode="1966684" />
+    <pkg name="com.xiaomi.metoknlp" ceDataInode="1966687" />
+    <pkg name="com.miui.cleanmaster" ceDataInode="1966690" />
+    <pkg name="com.android.storagemanager" ceDataInode="1966693" />
+    <pkg name="com.miui.analytics" ceDataInode="1966696" />
+    <pkg name="com.android.bookmarkprovider" ceDataInode="1966699" />
+    <pkg name="com.android.settings" ceDataInode="1966702">
+        <enabled-components>
+            <item name="com.android.settings.Settings$MyDeviceInfoActivity" />
+            <item name="com.android.settings.Settings$ConnectedDeviceDashboardActivity" />
+            <item name="com.android.settings.Settings$PowerUsageSummaryActivity" />
+            <item name="com.android.settings.Settings$SimSettingsActivity" />
+            <item name="com.android.settings.Settings$NetworkDashboardActivity" />
+            <item name="com.android.settings.Settings$WifiDisplaySettingsActivity" />
+            <item name="com.android.settings.Settings$DateTimeSettingsActivity" />
+            <item name="com.android.settings.Settings$BluetoothSettingsActivity" />
+            <item name="com.android.settings.Settings$DevelopmentSettingsDashboardActivity" />
+            <item name="com.android.settings.backup.BackupSettingsActivity" />
+            <item name="com.android.settings.Settings$WifiSettingsActivity" />
+            <item name="com.android.settings.WebViewImplementation" />
+            <item name="com.android.settings.Settings$UserSettingsActivity" />
+        </enabled-components>
+        <disabled-components>
+            <item name="com.android.settings.Settings$DeviceInfoSettingsActivity" />
+            <item name="com.android.settings.CryptKeeper" />
+            <item name="com.android.settings.Settings$DataUsageSummaryLegacyActivity" />
+            <item name="com.android.settings.Settings$DataUsageSummaryActivity" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.qualcomm.qti.ims" ceDataInode="1966705" />
+    <pkg name="com.qualcomm.qti.lpa" ceDataInode="1966708" />
+    <pkg name="com.qualcomm.qti.uim" ceDataInode="1966711" />
+    <pkg name="com.miui.weather2" ceDataInode="1966714">
+        <disabled-components>
+            <item name="com.xiaomi.push.service.XMPushService" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.autonavi.minimap" ceDataInode="2097156" stopped="true" />
+    <pkg name="com.qualcomm.location" ceDataInode="2097160" />
+    <pkg name="com.xiaomi.scanner" ceDataInode="2097163" stopped="true" nl="true" />
+    <pkg name="com.duokan.reader" ceDataInode="2097167" stopped="true" nl="true" />
+    <pkg name="com.android.cts.ctsshim" ceDataInode="2097171" />
+    <pkg name="org.codeaurora.gps.gpslogsave" ceDataInode="2097174" />
+    <pkg name="com.miui.yellowpage" ceDataInode="2097177" />
+    <pkg name="com.xiaomi.bluetooth.overlay" ceDataInode="2097180" />
+    <pkg name="com.android.vpndialogs" ceDataInode="2097183" />
+    <pkg name="com.android.email" ceDataInode="2097186">
+        <disabled-components>
+            <item name="com.kingsoft.email.service.Pop3Service" />
+            <item name="com.kingsoft.email.service.ImapService" />
+            <item name="com.kingsoft.email.service.EmailUpgradeBroadcastReceiver" />
+            <item name="com.kingsoft.email.service.LegacyEmailAuthenticatorService" />
+            <item name="com.kingsoft.email.service.AttachmentDownloadService" />
+            <item name="com.kingsoft.email.service.ImapPushService" />
+            <item name="com.kingsoft.email.service.LegacyEasAuthenticatorService" />
+            <item name="com.kingsoft.exchange.service.EmailSyncAdapterService" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.miui.voiceassist" ceDataInode="2097189" />
+    <pkg name="com.android.phone" ceDataInode="2097197" />
+    <pkg name="com.android.shell" ceDataInode="2097200">
+        <enabled-components>
+            <item name="com.android.shell.BugreportStorageProvider" />
+        </enabled-components>
+    </pkg>
+    <pkg name="com.android.wallpaperbackup" ceDataInode="2097203" />
+    <pkg name="com.android.providers.blockednumber" ceDataInode="2097206" />
+    <pkg name="com.android.providers.userdictionary" ceDataInode="2097209" />
+    <pkg name="com.android.emergency" ceDataInode="2097212" />
+    <pkg name="com.qualcomm.qti.seccamservice" ceDataInode="2097215" />
+    <pkg name="com.miui.smarttravel" ceDataInode="2097218" />
+    <pkg name="com.miui.greenguard" ceDataInode="2097221" enabled="2" enabledCaller="android" />
+    <pkg name="com.qualcomm.qti.roamingsettings" ceDataInode="2097224">
+        <disabled-components>
+            <item name="com.qualcomm.qti.roamingsettings.RoamingSettingsActivity" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.qualcomm.qti.qmmi" ceDataInode="2097227" />
+    <pkg name="com.android.location.fused" ceDataInode="2097230" />
+    <pkg name="com.android.deskclock" ceDataInode="2097233">
+        <disabled-components>
+            <item name="com.xiaomi.push.service.XMPushService" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.android.systemui" ceDataInode="2097236" />
+    <pkg name="com.android.bluetoothmidiservice" ceDataInode="2097239" />
+    <pkg name="com.qualcomm.qti.confdialer" ceDataInode="2097242" />
+    <pkg name="com.qualcomm.qti.poweroffalarm" ceDataInode="2097245" />
+    <pkg name="com.miui.smsextra" ceDataInode="2097248" />
+    <pkg name="com.android.thememanager" ceDataInode="2097251">
+        <disabled-components>
+            <item name="com.xiaomi.push.service.XMPushService" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.android.traceur" ceDataInode="2097254" />
+    <pkg name="com.android.thememanager.module" ceDataInode="2097257" />
+    <pkg name="com.xiaomi.mimobile.noti" ceDataInode="2097264" stopped="true" nl="true" />
+    <pkg name="com.xiaomi.smarthome" ceDataInode="2097267" enabled="3" enabledCaller="shell:1000">
+        <enabled-components>
+            <item name="com.xiaomi.smarthome.service.DeviceObserveService" />
+        </enabled-components>
+        <disabled-components>
+            <item name="com.xiaomi.push.service.XMPushService" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.lbe.security.miui" ceDataInode="2097271" />
+    <pkg name="com.android.bluetooth" ceDataInode="2097274" />
+    <pkg name="com.qualcomm.timeservice" ceDataInode="2097277" />
+    <pkg name="com.xiaomi.drivemode" ceDataInode="2097280" stopped="true" nl="true" />
+    <pkg name="com.qualcomm.embms" ceDataInode="2097283" />
+    <pkg name="com.android.providers.contacts" ceDataInode="2097286" />
+    <pkg name="com.android.captiveportallogin" ceDataInode="2097289" />
+    <pkg name="com.android.cellbroadcastreceiver.overlay.common" ceDataInode="2097296" />
+    <pkg name="com.miui.core" ceDataInode="2097303" />
+    <pkg name="com.miui.face" ceDataInode="2097306" />
+    <pkg name="com.miui.home" ceDataInode="2097309" />
+    <pkg name="com.android.bluetooth.overlay.common" ceDataInode="2097312" />
+    <pkg name="com.miui.audioeffect" ceDataInode="2097315" />
+    <preferred-activities>
+        <item name="com.android.mms/.ui.ComposeMessageRouterActivity" match="200000" always="true" set="1">
+            <set name="com.android.mms/.ui.ComposeMessageRouterActivity" />
+            <filter>
+                <action name="android.intent.action.SENDTO" />
+                <cat name="android.intent.category.DEFAULT" />
+                <scheme name="sms" />
+            </filter>
+        </item>
+        <item name="com.android.mms/.ui.ComposeMessageRouterActivity" match="200000" always="true" set="1">
+            <set name="com.android.mms/.ui.ComposeMessageRouterActivity" />
+            <filter>
+                <action name="android.intent.action.SENDTO" />
+                <cat name="android.intent.category.DEFAULT" />
+                <scheme name="mms" />
+            </filter>
+        </item>
+        <item name="com.android.mms/.ui.ComposeMessageRouterActivity" match="200000" always="true" set="1">
+            <set name="com.android.mms/.ui.ComposeMessageRouterActivity" />
+            <filter>
+                <action name="android.intent.action.SENDTO" />
+                <cat name="android.intent.category.DEFAULT" />
+                <scheme name="mmsto" />
+            </filter>
+        </item>
+        <item name="com.android.mms/.ui.ComposeMessageRouterActivity" match="200000" always="true" set="1">
+            <set name="com.android.mms/.ui.ComposeMessageRouterActivity" />
+            <filter>
+                <action name="android.intent.action.SENDTO" />
+                <cat name="android.intent.category.DEFAULT" />
+                <scheme name="smsto" />
+            </filter>
+        </item>
+    </preferred-activities>
+    <persistent-preferred-activities />
+    <crossProfile-intent-filters />
+    <default-apps>
+        <default-browser packageName="com.android.browser" />
+    </default-apps>
+</package-restrictions>

@@ -1,0 +1,35 @@
+adb reboot bootloader 进入兔子界面
+adb devices 
+fastboot devices
+fastboot boot twrp.img
+adb shell
+adb pull /data/system/packages.xml
+
+
+sirius:/ # ls -lt /data/system/dropbox/system_server_crash* | head
+-rw------- 1 system system 457 2026-08-26 00:53 /data/system/dropbox/system_server_crash@1787705610457.txt
+-rw------- 1 system system 457 2026-08-26 00:53 /data/system/dropbox/system_server_crash@1787705597892.txt
+-rw------- 1 system system 457 2026-08-26 00:53 /data/system/dropbox/system_server_crash@1787705585578.txt
+-rw------- 1 system system 457 2026-08-26 00:52 /data/system/dropbox/system_server_crash@1787705573100.txt
+-rw------- 1 system system 457 2026-08-26 00:52 /data/system/dropbox/system_server_crash@1787705560474.txt
+-rw------- 1 system system 457 2026-08-26 00:52 /data/system/dropbox/system_server_crash@1787705548206.txt
+-rw------- 1 system system 457 2026-08-26 00:52 /data/system/dropbox/system_server_crash@1787705535539.txt
+-rw------- 1 system system 457 2026-08-26 00:52 /data/system/dropbox/system_server_crash@1787705523044.txt
+-rw------- 1 system system 457 2026-08-26 00:51 /data/system/dropbox/system_server_crash@1787705510775.txt
+-rw------- 1 system system 457 2026-08-26 00:51 /data/system/dropbox/system_server_crash@1787705498361.txt
+sirius:/ # cat /data/system/dropbox/system_server_crash@1787705610457.txt
+Process: system_server
+Build: Xiaomi/sirius/sirius:9/PKQ1.181121.001/V10.3.2.0.PEBCNXM:user/release-keys
+
+java.lang.RuntimeException: System error: connot find system app : com.xiaomi.market
+        at com.miui.server.SecurityManagerService.enforceAppSignature(SecurityManagerService.java:571)
+        at com.miui.server.SecurityManagerService.access$1500(SecurityManagerService.java:105)
+        at com.miui.server.SecurityManagerService$1.run(SecurityManagerService.java:651)
+		
+		
+查看系统文件		
+adb shell		
+mkdir -p /mnt/system
+mount -o rw /dev/block/mmcblk0p79 /mnt/system	
+
+fastboot --disable-verity --disable-verification flash vbmeta vbmeta.img
