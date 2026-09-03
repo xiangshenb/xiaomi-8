@@ -6,7 +6,8 @@
 - 系统：MIUI 10.3.2.0，版本 `V10.3.2.0.PEBCNXM`
 - Android：Android 9，SDK 28
 - Bootloader：已解锁
-- Recovery：TWRP 3.7.0_9-0，可通过 `fastboot boot twrp.img` 临时启动
+- Recovery：TWRP 3.7.0_9-0，已刷入 Recovery 分区，按音量上+电源键直接进入
+- 已禁用 `/system/bin/install-recovery.sh`（重命名为 `.bak`），防止 MIUI 开机恢复官方 Recovery
 - Android 正常系统：没有 `su`、Magisk、KernelSU 或 APatch
 - TWRP Recovery：ADB shell 为 root，可修改 `/data/system` 下的系统状态文件
 
@@ -29,7 +30,8 @@
 - 关闭“我的小米”
 - 彻底关闭 MIUI 系统更新的界面、自动检查和推送触发
 - 所有限制均可通过一个 JSON 文件配置并恢复
-- 不删除系统 APK，不修改 `/system`，不禁用 MIUI 启动所依赖的关键系统包
+- 不删除系统 APK，不禁用 MIUI 启动所依赖的关键系统包
+- 已禁用 MIUI 的 `install-recovery.sh`，防止官方 Recovery 覆盖 TWRP
 
 ## 3. 文件位置
 
@@ -46,8 +48,16 @@ G:\softWare\xiaomi\platform-tools\twrp.img
 手机端文件：
 
 ```text
-/sdcard/install-control.json
-/sdcard/apply-install-control.sh
+/sdcard/lock.sh      全部限制（禁止安装+隐藏所有应用）
+/sdcard/unlock.sh    全部恢复（允许安装+显示所有应用）
+/sdcard/install.sh   只允许安装，其他限制保持
+/sdcard/a.sh         应用脚本（被上面三个调用）
+```
+
+手机端执行后自动生成：
+
+```text
+/sdcard/install-control.json       配置文件（临时）
 ```
 
 ## 4. JSON 配置
@@ -279,19 +289,19 @@ TWRP 已刷入 Recovery 分区，不需要电脑。
 全部限制（禁止安装 + 隐藏所有应用）：
 
 ```sh
-sh /sdcard/lock-all.sh
+sh /sdcard/lock.sh
 ```
 
 全部恢复（允许安装 + 显示所有应用）：
 
 ```sh
-sh /sdcard/unlock-all.sh
+sh /sdcard/unlock.sh
 ```
 
 只临时允许安装，其他限制保持不变：
 
 ```sh
-sh /sdcard/allow-install.sh
+sh /sdcard/install.sh
 ```
 
 执行成功后显示：
@@ -305,6 +315,8 @@ Reboot Android now.
 ```
 
 然后在 TWRP 中点 **重启 > 系统**。
+
+脚本不会自动重启，需要手动在 TWRP 主菜单点 **Reboot > System**。
 
 ### 6.3 手动编辑 JSON
 
@@ -333,21 +345,20 @@ Ctrl+X
 保存后必须执行脚本才能生效：
 
 ```sh
-sh /sdcard/apply-install-control.sh
+sh /sdcard/a.sh
 ```
 
 然后重启系统。
 
-注意：只改 JSON 后直接重启不会生效，必须执行 `apply-install-control.sh`。
+注意：只改 JSON 后直接重启不会生效，必须执行 `a.sh`。
 
 ### 6.4 手机端文件列表
 
 ```text
-/sdcard/install-control.json       配置文件
-/sdcard/apply-install-control.sh   应用脚本
-/sdcard/lock-all.sh                全部限制快捷脚本
-/sdcard/unlock-all.sh              全部恢复快捷脚本
-/sdcard/allow-install.sh           只允许安装快捷脚本
+/sdcard/lock.sh      全部限制
+/sdcard/unlock.sh    全部恢复
+/sdcard/install.sh   只允许安装
+/sdcard/a.sh         应用脚本（被上面三个调用）
 ```
 
 ## 7. 电脑端操作方法
@@ -375,7 +386,7 @@ install-control.cmd
 2. 检测手机状态（正常系统或 fastboot）
 3. 临时启动 TWRP
 4. 推送 JSON 和脚本到手机
-5. 执行 `apply-install-control.sh`
+5. 执行应用脚本
 6. 重启系统
 7. 验证最终状态
 
@@ -476,7 +487,7 @@ com.xiaomi.market
 pm disable-user --user 0 com.miui.packageinstaller
 ```
 
-也不要通过删除 APK、修改 `/system`、刷写 `vbmeta` 等方式实现限制。
+也不要通过删除 APK、刷写 `vbmeta` 等方式实现限制。
 
 本方案的安全原则：
 
@@ -486,6 +497,23 @@ pm disable-user --user 0 com.miui.packageinstaller
 - 使用 Android 官方 `no_install_apps` 用户限制统一禁止安装
 - 所有修改均位于 `/data`，保留备份且可以恢复
 - 每次修改后验证 `sys.boot_completed=1`
+
+### 11.1 TWRP 持久化
+
+TWRP 已刷入 Recovery 分区，并已禁用 MIUI 恢复官方 Recovery 的机制：
+
+```text
+/system/bin/install-recovery.sh -> /system/bin/install-recovery.sh.bak
+```
+
+如果以后需要恢复官方 Recovery，在 TWRP 终端执行：
+
+```sh
+mount /system
+mv /system/bin/install-recovery.sh.bak /system/bin/install-recovery.sh
+```
+
+然后重启系统，MIUI 会自动恢复官方 Recovery。
 
 ## 12. 当前最终状态
 
